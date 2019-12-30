@@ -4,8 +4,8 @@
 The easiest way to "copy" a workflow into your own package is as follows:
   - Add sodre/workflows as a remote and fetch all branches
     ```bash
-    hub remote add sodre/workflows ghw-sodre
-    hub fetch --all
+    git remote add ghw-sodre https://github.com/sodre/workflows.git
+    git fetch --all
     ```
   - Copy the workflow that you want to use
     ```
