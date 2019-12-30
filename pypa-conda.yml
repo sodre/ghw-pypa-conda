@@ -1,7 +1,6 @@
 #
-# To update pypa-conda to the latest version
-#   hub remote add sodre/ghw-pypa-conda
-#
+# This GitHub Workflow was installed from https://github.com/sodre/workflows
+# Please see the original repo on instructions on how to keep this up-to-date
 name: pypa-conda
 on:
   release:
