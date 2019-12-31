@@ -8,6 +8,9 @@ on:
   pull_request:
     branches-ignore:
       - 'ght/**'
+  push:
+    branches:
+      - master
 jobs:
   #
   # Create the PyPA source distribution
