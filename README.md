@@ -4,12 +4,11 @@
 The easiest way to "copy" a workflow into your own package is as follows:
   - Add sodre/workflows as a remote and fetch all branches
     ```bash
-    hub remote add sodre/workflows ghw-sodre
-    hub fetch --all
+    git remote add ghw-sodre https://github.com/sodre/workflows.git
+    git fetch ghw-sodre
     ```
   - Copy the workflow that you want to use
     ```
-    git show ghw-sodre/master:pypa-conda.yaml > .github/workflows/pypa-conda.yaml
-    git add .github/workflows/pypa-conda.yaml
+    git --work-tree=.github/workflows/ checkout remotes/ghw-sodre/master -- pypa-conda.yml
     ```
 
